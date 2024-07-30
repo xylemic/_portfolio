@@ -19,5 +19,5 @@ tailwind.config = {
       }
     }
   },
- dark_mode: 'selector'
+ darkMode: 'selector'
 }

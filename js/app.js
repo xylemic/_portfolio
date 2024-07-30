@@ -12,13 +12,13 @@ function close_menu() {
 
 window.addEventListener('scroll', () => {
   if (scrollY > 50) {
-    nav_bar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    nav_bar.classList.add('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-dark_theme', 'dark:shadow-white/20');
 
-    nav_links.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50');
+    nav_links.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/70', 'dark:bg-transparent');
   } else {
-    nav_bar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm');
+    nav_bar.classList.remove('bg-white', 'bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-dark_theme', 'dark:shadow-white/20');
 
-    nav_links.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50');
+    nav_links.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/70', 'dark:bg-transparent');
   }
 })
 
